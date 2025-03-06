@@ -1,0 +1,46 @@
+*{ padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(167, 129, 129);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   /* columnas */
+    grid-template-rows: 1fr 1fr 1fr;   /* filas */
+    grid-template-areas: 
+    " header header header"
+    " new text aside"
+    " footer footer aside";
+}
+
+header{ 
+    grid-area:header;
+    background-color: #f1c40f;
+
+}
+
+#news{
+
+    grid-area:news ;
+    background-color: rgb(88, 211, 248);
+ }
+
+ #text{
+     grid-area: text;
+     background-color: greenyellow;
+ }
+
+ aside{ 
+    grid-area: aside;
+    background-color: rosybrown;
+ }
+
+ footer{
+     grid-area: footer;
+     background-color: blueviolet;
+ }
+
+

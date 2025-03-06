@@ -1,0 +1,82 @@
+/* Fuente general */
+body {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+h1 {
+    color: white;
+    background-color: #2c3e50; /* Verde elegante */
+    font-size:40 px;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.subtitulo {
+    font-size: 25px;
+    color: #c02828;
+    text-align: center;
+    margin: 5px 0 20px;
+}
+
+/* Contenedor principal */
+#contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Caja de menú */
+.caja {
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+/* Títulos */
+h2, h3, h4 {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* Precios */
+.precio {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Imagen */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Separadores */
+hr {
+    height: 2px;
+    background-color: #333;
+    border: none;
+}
+
+.subtitulo{
+    color: black;
+    font-size: 30px;
+    text-align: center  ;
+    margin-top: 0; /* Elimina el espacio extra arriba de "Restaurante" */
+}

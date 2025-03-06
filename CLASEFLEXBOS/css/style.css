@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.caja{ 
+    border: solid violet;
+    width: 200px;
+    height: 200px;
+    background-color: aqua ;
+    font-size: 3rem;
+    
+}
+
+#doby{
+    background-color: brown;
+
+}
+#contenedor{ 
+
+    display: flex;
+    background-color: blue;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}

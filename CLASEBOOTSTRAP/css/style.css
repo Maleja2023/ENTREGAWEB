@@ -1,0 +1,353 @@
+#uno{
+    background-color: red;
+}
+
+#dos{
+    background-color: blue;
+}
+
+.tres{
+    background-color: green;
+}
+
+.menu{
+    background-color: rgb(42, 163, 42);
+}
+
+.carusel__altura__500px{
+    height: 300px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: url('img/UNI.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+    .carousel-wrapper {
+        position: relative;
+        width: 80%; /* Ajusta el tamaño del contenedor */
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    .carousel-container {
+        position: relative;
+        width: 100%;
+    }
+    
+    .small-carousel {
+        position: absolute;
+        bottom: 0; /* Lo coloca al borde inferior del primer carrusel */
+        left: 14%; /* Lo centra horizontalmente */
+        transform: translateX(-50%);
+        width: 15%; /* Ajusta el tamaño del segundo carrusel */
+        z-index: 10; /* Asegura que esté sobre el primero */
+    }
+    
+    .small-carousel img {
+        width: 50%;  /* Ocuparán el ancho del carrusel */
+        height: 100px; /* Ajusta la altura según la imagen de Facebook */
+        object-fit: cover; /* Recorta la imagen para ajustarse sin distorsión */
+    }
+    .menu-container {
+        position: absolute;
+        left: 0; /* Ajusta este valor para moverlo más a la izquierda si es necesario */
+        top: 600px; /* Ajusta la posición vertical si lo necesitas */
+        width: 300px; /* Define un ancho para mantener el diseño */
+    }
+
+    .menu-container2 {
+        position: absolute;
+        left: 0PX; /* Ajusta este valor para moverlo más a la izquierda si es necesario */
+        top: 550px; /* Ajusta la posición vertical si lo necesitas */
+   
+        width: 300px; /* Define un ancho para mantener el diseño */
+    }
+
+    .accordion-item {
+        border: none;
+    }
+
+    .accordion-button {
+        background-color: #27c027; /* Verde */
+        color: white;
+        font-weight: bold;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: #ff0000; /* Rojo cuando está expandido */
+        color: white;
+    }
+
+    .accordion-body {
+        background-color: white; /* Blanco */
+        color: black;
+    }
+
+    .accordion-body a {
+        color:#27c027; /* Verde para los enlaces */
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .accordion-body a:hover {
+        color: #ff0000; /* Rojo al pasar el mouse */
+    }
+
+
+    #personal {
+        background-color:#27c027 !important; /* Cambia el color de fondo */
+    }
+    
+    .navbar-brand {
+        color: white !important; /* Cambia el color del texto */
+    }
+    
+    .navbar-nav .nav-link {
+        color: white !important; /* Cambia el color de los enlaces */
+    }
+    
+    .navbar-toggler {
+        border-color: white; /* Cambia el color del borde del botón de colapso */
+    }
+    
+    
+        .menu {
+            position: fixed;
+            top: 229Px; /* Ajusta según la altura del logo */
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; /* Asegura que se mantenga a la derecha */
+            z-index: 200PX;
+            background: transparent; /* Asegura que no tenga color innecesario */
+
+
+        }
+       
+        .menu {
+            width: 80px;
+            background-color: #27c027;
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            
+        }
+        
+        .menu-item {
+            width: 100%;
+            height: 60px;
+            margin-top: -131px;
+            background-color: #27c027;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            transition: width 0.3s ease-in-out;
+            cursor: pointer;
+            margin: 4px 0; /* Espaciado uniforme */
+            padding: 5px;
+            border-radius: 5px; /* Bordes redondeados */
+        }
+        
+        .menu-item:hover {
+            width: 300px; /* Expansión más amplia */
+            background-color: #1f9d1f;
+        }
+        
+        .menu-item img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px; /* Espaciado entre icono y texto */
+            transition: transform 0.3s;
+        }
+        
+        .menu-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .menu-item span {
+            opacity: 0;
+            white-space: nowrap;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            transition: opacity 0.3s;
+        }
+        
+        .menu-item:hover span {
+            opacity: 1;
+        }
+        
+        .container5 {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start; /* Alinear a la izquierda */
+            align-items: center;
+        }
+
+        .servicio {
+            text-align: left;
+        }
+
+        .facebook-img {
+            width: 300px;  /* Ancho fijo */
+            height: 200px; /* Alto fijo */
+            object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+        }
+
+        .custom-card {
+            width: 300px;  
+            height: 150px; 
+            overflow: hidden; /* Evita que el contenido desborde */
+            font-size: 12px; /* Reduce el tamaño del texto para ajustarse */
+            white-space: nowrap; /* Evita que los textos se rompan en varias líneas */
+        }
+        .custom-card .card-body {
+            padding: 5px; /* Reduce el espacio interno */
+        }
+        .custom-card .list-group-item {
+            padding: 2px 5px; /* Espaciado interno más pequeño */
+            font-size: 11px; /* Ajuste de tamaño del texto */
+        }
+        
+
+        .container7 {
+            display: flex;
+            justify-content: right; /* Centrar con respecto al carrusel */
+            padding: 20px;
+            margin-top: -20px;
+        }
+    
+        .grid-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Espacio entre tarjetas */
+            max-width: 200px; /* Ajusta el ancho de las tarjetas */
+        }
+    
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .card img {
+            width: 50%;
+            height: 100px;
+            object-fit: cover;
+        }
+    
+        .card-body {
+            padding: 5px;
+        }
+    
+        .card-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    
+        .card-text {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+    
+        .leer-mas {
+            display: block;
+            text-decoration: none;
+            color: #ee321a;
+            font-weight: bold;
+            padding: 5px 0;
+        }
+
+        .botonera {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 5px;
+            padding: 10px;
+        }
+    
+        .botonera button {
+            flex-grow: 1; /* Hace que los botones ocupen el mismo espacio */
+            padding: 0;
+            border: none;
+            background: none;
+            height: 100px; /* Aumenta la altura del botón */
+        }
+    
+        .botonera button img {
+            width: 100%;  /* Hace que la imagen ocupe todo el botón */
+            height: 150%; /* Ajusta la altura al botón */
+            object-fit: cover; /* Asegura que la imagen cubra toda el área sin deformarse */
+            border-radius: 5px; /* Opcional: Redondea los bordes de los botones */
+        }
+
+
+        footer {
+            background-color: #f8f9fa; /* Color de fondo */
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+            color: #333; /* Color del texto */
+            margin-top: 20px;
+            border-top: 2px solid #ddd; /* Línea superior */
+        }
+    
+        footer a {
+            color: #007bff; /* Color de enlaces */
+            text-decoration: none;
+        }
+    
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        
+        .containerB {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .box {
+            width: 95%;
+            max-width: 1200px;
+            height: 250px; /* Aumentamos altura */
+            border-radius: 15px;
+            overflow: hidden; /* Para que la imagen no sobresalga */
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .box img {
+            width: 100%; /* Ocupa todo el ancho */
+            height: 100%; /* Ocupa todo el alto */
+            object-fit: cover; /* La imagen se ajusta sin deformarse */
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            background: #026937;
+            color: white;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+       
