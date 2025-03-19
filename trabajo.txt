@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Handoff</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         * {
             margin: 0;
@@ -13,63 +12,221 @@
         }
         body {
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100vh;
-            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
         }
-        header {
-            width: 100%;
-            height: 60px;
-            background-color: #333;
+        .container {
+            display: grid;
+            width: 90vw;
+            height: 90vh;
+            grid-template-rows: 10% 10% 1fr 10%;
+            grid-template-columns: 1fr;
+        }
+        .header {
+            background-color: green;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             position: relative;
         }
-        .header-box {
+        .header .box {
             width: 20px;
             height: 20px;
             background-color: yellow;
             border: 2px solid red;
+            position: absolute;
+            bottom: -10px;
         }
-        main {
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
+        .nav {
+            background-color: red;
+        }
+        .content {
+            display: flex;
+            background-color: blue;
             padding: 20px;
         }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
+        .sidebar {
+            background-color: purple;
+            width: 30%;
         }
-        .box {
-            width: 100px;
-            height: 100px;
-            background-color: lightgray;
-            border: 1px solid black;
+        .main {
+            background-color: transparent;
+            width: 70%;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            padding: 10px;
+        }
+        .card {
+            background-color: gray;
+            border: 2px solid orange;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer {
+            background-color: pink;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-rows: 10% 10% 1fr 10%;
+            }
+            .content {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                height: 100px;
+            }
+            .main {
+                grid-template-columns: 1fr;
+            }
         }
         @media (min-width: 769px) {
-            .container {
-                flex-direction: row;
+            .main {
+                grid-template-columns: 1fr 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-box"></div>
-    </header>
-    <main>
-        <section class="container">
+    <div class="container">
+        <div class="header">
             <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-        </section>
-    </main>
+        </div>
+        <div class="nav"></div>
+        <div class="content">
+            <div class="sidebar"></div>
+            <div class="main">
+                <div class="card">1</div>
+                <div class="card">2</div>
+                <div class="card">3</div>
+                <div class="card">4</div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Handoff</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 90vw;
+            height: 90vh;
+        }
+        .header {
+            background-color: green;
+            padding: 20px;
+            position: relative;
+        }
+        .header .small-box {
+            width: 20px;
+            height: 20px;
+            background-color: yellow;
+            border: 2px solid red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .sub-header {
+            background-color: red;
+            padding: 10px;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            background-color: blue;
+            padding: 20px;
+            flex: 1;
+        }
+        .large-box {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            background-color: transparent;
+            border: 5px solid yellow;
+            padding: 10px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .small-box-inside {
+            flex: 1;
+            background-color: gray;
+            height: 50px;
+            border: 3px solid darkgreen;
+        }
+        .footer {
+            background-color: purple;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="small-box"></div>
+        </div>
+        <div class="sub-header"></div>
+        <div class="content">
+            <div class="large-box">
+                <div class="row">
+                    <div class="small-box-inside"></div>
+                    <div class="small-box-inside"></div>
+                </div>
+                <div class="row">
+                    <div class="small-box-inside"></div>
+                    <div class="small-box-inside"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
+
